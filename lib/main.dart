@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         // Remove the debug banner
         debugShowCheckedModeBanner: false,
-        title: 'Kindacode.com',
+        title: 'Paginated List',
         theme: ThemeData(
-          primarySwatch: Colors.pink,
+          primarySwatch: Colors.teal,
         ),
         home: const HomePage());
   }
@@ -133,7 +133,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Kindacode.com'),
+        title: const Text('Paginated List'),
       ),
       body: _isFirstLoadRunning
           ? const Center(
@@ -171,9 +171,9 @@ class _HomePageState extends State<HomePage> {
                 if (_hasNextPage == false)
                   Container(
                     padding: const EdgeInsets.only(top: 30, bottom: 40),
-                    color: Colors.amber,
+                    color: Colors.teal,
                     child: const Center(
-                      child: Text('You have fetched all of the content'),
+                      child: Text('You have fetched all  items here...'),
                     ),
                   ),
               ],
